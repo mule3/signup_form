@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display:flex;
+   justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0px;
+}
+.container {
+    background:wheat;
+   padding: 20px 30px;
+    border-radius: 8px;
+  width: 300px;
+}
+h2 {
+    text-align: center;
+}
+form {
+   display: flex;/* use for the form is have structure*/
+    flex-direction:column; /*use form list in to a column*/
+}
+label {
+    margin-top: 10px;
+}
+input {
+    padding: 8px;/* is the white space inside the input*/
+    margin-top: 5px;/* is the space between the label and input*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    margin-top: 15px;
+    padding: 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+#errorMsg {
+    color: red;
+    margin-top: 10px;/* this is the space between the error message and the input*/
+    min-height: 20px;/* this is the minimum height of the error message*/
+    text-align: center;
+}
+.password-wrapper {
+    position: relative;/* this is the position of the password input*/
+    display: flex;/* this is the display of the password input*/
+    align-items: center;
+}
+.password-wrapper input[type="password"],/* this is the type of the password input*/
+.password-wrapper input[type="text"] {
+    flex: 1;
+}/* this is the flex of the password input*/
+
+
+.toggle-password {
+    position: absolute;/* this is the position of the toggle password*/
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+}
+
+button.sub:hover{
+    color: #007bff
+}
